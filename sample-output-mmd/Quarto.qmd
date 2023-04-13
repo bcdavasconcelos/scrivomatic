@@ -570,7 +570,7 @@ No meæ menandri mediøcritatem [@siegel2015; @barrett2015; @crivellato2007], me
 
 []{#scriv27}
 
-By [Bernardo Vasconcelos](https://github.com/bcdavasconcelos) (see this)
+By [Bernardo Vasconcelos](https://github.com/bcdavasconcelos) (see [this thread](https://forum.literatureandlatte.com/t/scrivener-quarto-cite-tools-advanced-bibliography-for-a-technical-academic-publishing-workflow/133803))
 
 This is a short summary of changes to Ian's excellect [Quarto template for Scrivener](http://forum.literatureandlatte.com/t/scrivener-quarto-a-technical-academic-publishing-workflow/129769?u=bernardo_vasconcelos) to integrate the [Cite Tools](http://bcdavasconcelos.github.io/citetools/) Quarto Extension. The extension introduces bibliography features that previously had been confined to `BibTeX` to Pandoc's Citeproc environment, keeping the output consistent across most formats (`LaTeX`, `DOCX`, `HTML`, and so on).
 
