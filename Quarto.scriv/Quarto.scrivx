@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="B2CC997B-84FB-419C-B634-9E0BCAE9FD5F" Version="2.0" Creator="SCRMAC-3.3.1-15588" Device="iMac-de-Bernardo-2" Author="" Modified="2023-04-13 15:29:54 -0300" ModID="CB9AF845-7562-43B8-9783-BA6536DA9F2A">
+<ScrivenerProject Identifier="B2CC997B-84FB-419C-B634-9E0BCAE9FD5F" Version="2.0" Creator="SCRMAC-3.3.1-15588" Device="iMac-de-Bernardo-2" Author="" Modified="2023-04-13 18:23:48 -0300" ModID="6EF5AC91-4461-4ACD-9DA6-2B34D01E7310">
     <Binder>
         <BinderItem UUID="AD107F76-1964-416F-8DD0-01B59C5A3060" Type="Text" Created="2022-08-30 19:26:32 -0300" Modified="2022-09-21 09:03:14 -0300">
             <Title>About this Template</Title>
@@ -230,24 +230,24 @@
                                         <IconFileName>Figures and Graphs</IconFileName>
                                         <CustomMetaData>
                                             <MetaDataItem>
-                                                <FieldID>width</FieldID>
-                                                <Value>3cm</Value>
+                                                <FieldID>attributes</FieldID>
+                                                <Value>fig-align="right"</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
                                                 <FieldID>id</FieldID>
                                                 <Value>#fig-withattributes</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
-                                                <FieldID>class</FieldID>
-                                                <Value>.myclass</Value>
-                                            </MetaDataItem>
-                                            <MetaDataItem>
-                                                <FieldID>attributes</FieldID>
-                                                <Value>fig-align="right"</Value>
+                                                <FieldID>width</FieldID>
+                                                <Value>3cm</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
                                                 <FieldID>height</FieldID>
                                                 <Value>2cm</Value>
+                                            </MetaDataItem>
+                                            <MetaDataItem>
+                                                <FieldID>class</FieldID>
+                                                <Value>.myclass</Value>
                                             </MetaDataItem>
                                         </CustomMetaData>
                                     </MetaData>
@@ -433,14 +433,15 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB" Type="Text" Created="2023-02-25 14:30:29 -0300" Modified="2023-04-13 00:20:29 -0300">
+                <BinderItem UUID="6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB" Type="Text" Created="2023-02-25 14:30:29 -0300" Modified="2023-04-13 16:35:40 -0300">
                     <Title>CiteTools Integration</Title>
                     <MetaData>
+                        <SectionType>9BBFFF4A-A9AA-435F-A9CA-B7DFFD4593EE</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>78,7</NotesTextSelection>
                         <CustomMetaData>
                             <MetaDataItem>
-                                <FieldID>attributes</FieldID>
+                                <FieldID>depth</FieldID>
                                 <Value>#</Value>
                             </MetaDataItem>
                         </CustomMetaData>
@@ -449,19 +450,20 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8" Type="Text" Created="2023-04-12 15:33:08 -0300" Modified="2023-04-13 01:29:35 -0300">
+                        <BinderItem UUID="F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8" Type="Text" Created="2023-04-12 15:33:08 -0300" Modified="2023-04-13 18:23:43 -0300">
                             <Title>List of Changes</Title>
                             <MetaData>
+                                <SectionType>9BBFFF4A-A9AA-435F-A9CA-B7DFFD4593EE</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <CustomMetaData>
                                     <MetaDataItem>
-                                        <FieldID>attributes</FieldID>
-                                        <Value>#</Value>
+                                        <FieldID>depth</FieldID>
+                                        <Value>##</Value>
                                     </MetaDataItem>
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>859,0</TextSelection>
+                                <TextSelection>1033,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
@@ -1143,11 +1145,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-08-30 08:51:22 -0300" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2023-04-14 00:00:00 -0300" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="-4" Characters="-20" Date="2023-04-13 15:29:43 -0300"/>
+        <PreviousSession Words="2" Characters="17" Date="2023-04-13 18:03:11 -0300"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2023-04-13 00:00:00 -0300">
-        <DraftWordCount>-4</DraftWordCount>
-        <DraftCharCount>-20</DraftCharCount>
+        <DraftWordCount>2</DraftWordCount>
+        <DraftCharCount>17</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>

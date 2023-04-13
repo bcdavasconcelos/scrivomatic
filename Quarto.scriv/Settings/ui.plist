@@ -11,7 +11,7 @@
 	<key>binderSplitFrames</key>
 	<array>
 		<string>{{0, 0}, {267, 1354}}</string>
-		<string>{{268, 0}, {1184, 1354}}</string>
+		<string>{{268, 0}, {2292, 1354}}</string>
 	</array>
 	<key>binderWidth</key>
 	<real>208</real>
@@ -409,8 +409,8 @@
 	</dict>
 	<key>inspectorSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {720, 1324}}</string>
-		<string>{{721, 0}, {463, 1324}}</string>
+		<string>{{0, 0}, {1906.5, 1324}}</string>
+		<string>{{1907.5, 0}, {384.5, 1324}}</string>
 	</array>
 	<key>inspectorWidth</key>
 	<real>524.5</real>
@@ -438,18 +438,29 @@
 		<real>1.5</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>0 33 1452 1382 0 0 2560 1415 </string>
+	<string>0 33 2560 1382 0 0 2560 1415 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>1</real>
 	</dict>
+	<key>supportingDocumentEditor.outlinerColumnsWidths</key>
+	<dict>
+		<key>label</key>
+		<real>85</real>
+		<key>sectionType</key>
+		<real>100</real>
+		<key>status</key>
+		<real>85</real>
+		<key>title</key>
+		<real>524.5</real>
+	</dict>
 	<key>supportingDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {705, 1268}}</string>
+	<string>{{0, 0}, {720, 634}}</string>
 	<key>supportingDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>
-		<real>1</real>
+		<real>2</real>
 	</dict>
 	<key>supportingDocumentViewIsCurrent</key>
 	<false/>

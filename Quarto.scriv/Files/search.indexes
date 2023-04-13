@@ -773,7 +773,7 @@ See the backmatter for examples.
 
 2. New Section Type &amp; Custom Metadata Field can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (Depth) with no space at the end, as in ###, and then selecting the  Depth + Header section type.
 
-3. New Styles provide support for the cite field Lua Filter, which can be used to cite arbitrary fields of the references.
+3. New Styles provide support for the cite field Lua Filter, which can be used to cite arbitrary fields of the references. I am a pandoc-style inline footnote!
 
 The works of AristOp were first edited 
 by AristOp in AristOp.  
