@@ -10,8 +10,8 @@
 	<false/>
 	<key>binderSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {267, 1023}}</string>
-		<string>{{268, 0}, {785, 1023}}</string>
+		<string>{{0, 0}, {267, 1354}}</string>
+		<string>{{268, 0}, {1184, 1354}}</string>
 	</array>
 	<key>binderWidth</key>
 	<real>208</real>
@@ -409,8 +409,8 @@
 	</dict>
 	<key>inspectorSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {321, 993}}</string>
-		<string>{{322, 0}, {463, 993}}</string>
+		<string>{{0, 0}, {720, 1324}}</string>
+		<string>{{721, 0}, {463, 1324}}</string>
 	</array>
 	<key>inspectorWidth</key>
 	<real>524.5</real>
@@ -438,14 +438,14 @@
 		<real>1.5</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>0 28 1053 1051 0 0 1728 1079 </string>
+	<string>0 33 1452 1382 0 0 2560 1415 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>1</real>
 	</dict>
 	<key>supportingDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {306, 937}}</string>
+	<string>{{0, 0}, {705, 1268}}</string>
 	<key>supportingDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>

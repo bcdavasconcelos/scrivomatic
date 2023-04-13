@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="B2CC997B-84FB-419C-B634-9E0BCAE9FD5F" Version="2.0" Creator="SCRMAC-3.3.1-15588" Device="iMac-de-Bernardo-2" Author="" Modified="2023-04-13 14:23:13 -0300" ModID="B97E90A4-5BEF-41B0-8888-5E6CBB9935E5">
+<ScrivenerProject Identifier="B2CC997B-84FB-419C-B634-9E0BCAE9FD5F" Version="2.0" Creator="SCRMAC-3.3.1-15588" Device="iMac-de-Bernardo-2" Author="" Modified="2023-04-13 15:29:54 -0300" ModID="CB9AF845-7562-43B8-9783-BA6536DA9F2A">
     <Binder>
         <BinderItem UUID="AD107F76-1964-416F-8DD0-01B59C5A3060" Type="Text" Created="2022-08-30 19:26:32 -0300" Modified="2022-09-21 09:03:14 -0300">
             <Title>About this Template</Title>
@@ -230,8 +230,8 @@
                                         <IconFileName>Figures and Graphs</IconFileName>
                                         <CustomMetaData>
                                             <MetaDataItem>
-                                                <FieldID>height</FieldID>
-                                                <Value>2cm</Value>
+                                                <FieldID>width</FieldID>
+                                                <Value>3cm</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
                                                 <FieldID>id</FieldID>
@@ -242,12 +242,12 @@
                                                 <Value>.myclass</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
-                                                <FieldID>width</FieldID>
-                                                <Value>3cm</Value>
-                                            </MetaDataItem>
-                                            <MetaDataItem>
                                                 <FieldID>attributes</FieldID>
                                                 <Value>fig-align="right"</Value>
+                                            </MetaDataItem>
+                                            <MetaDataItem>
+                                                <FieldID>height</FieldID>
+                                                <Value>2cm</Value>
                                             </MetaDataItem>
                                         </CustomMetaData>
                                     </MetaData>
@@ -1143,7 +1143,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-08-30 08:51:22 -0300" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2023-04-14 00:00:00 -0300" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="-4" Characters="-20" Date="2023-04-13 14:23:03 -0300"/>
+        <PreviousSession Words="-4" Characters="-20" Date="2023-04-13 15:29:43 -0300"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2023-04-13 00:00:00 -0300">
         <DraftWordCount>-4</DraftWordCount>
