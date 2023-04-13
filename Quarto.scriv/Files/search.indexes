@@ -679,7 +679,6 @@ The script edits the compiled markdown so the {#eq-label} is placed on the same 
         </Document>
         <Document ID="B6DF8B74-2795-4E2E-9BC3-A1FC4605BDEE">
             <Title>Secondary Sources</Title>
-            <Synopsis>Don't forget to set the bibliography path!</Synopsis>
         </Document>
         <Document ID="28E4AEF0-E993-4AED-B36C-D45EE66FCBCE">
             <Title>Marginalia</Title>
@@ -764,44 +763,52 @@ Jane Doe 16/04/2019, 14:50 - this is a comment.</Comments>
 
 Choose the Multibib section type, fill the Path custom meta-data field and you're set! Bibliography sections will be named after the last heading element, that is, the binder item whence it originated, as it happens with all other chapters of the text. 
 
-You can point Quarto and Pandoc to the bibliography file in several ways:
+You can point Quarto and Pandoc to the bibliography file using relative paths, full paths and URLs.
 
-- Relative path: my_file.bib
-- Full path: /Users/username/Dropbox/Bibliography/my_file.bib
-- URL: https://raw.githubusercontent.com/bcdavasconcelos/ABNT-Phi/main/corpus-aristotelicum.bib
+- my_file.bib
+- /Users/username/bibliography/my_file.bib
+- https://raw.githubusercontent.com/.../arist.bib
 
 See the backmatter for examples.
 
-2. New Section Type &amp; Custom Metadata Field can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (Depth) with no space at the end, as in ###, and then selecting the  Depth .. Header &amp; Text section type.
+2. New Section Type &amp; Custom Metadata Field can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (Depth) with no space at the end, as in ###, and then selecting the  Depth + Header section type.
 
 3. New Styles provide support for the cite field Lua Filter, which can be used to cite arbitrary fields of the references.
-
-
-Markdown Source
-Output
-`The works of AristOp were first edited by AristOp in AristOp`. 
-The works of AristOp were first edited by AristOp in AristOp.  
-`Later, the DA (DA) was edited by DABiehl1896`
-Later, the DA (DA) was edited by DABiehl1896
-`in DABiehl1896 (reprinted in DATheiler's DATheiler translation)`
-in DABiehl1896 (reprinted in DATheiler's DATheiler translation).
-
-: Simple example of how we are using styles to create the correct markup {#tbl-cite-field-example}
-
-
-The works of AristOp were first edited by AristOp in AristOp.  
 
 The works of AristOp were first edited 
 by AristOp in AristOp.  
 
+The works of AristOp were first edited by AristOp in AristOp.  
 
 Later, the DA (DA) was edited by 
 DABiehl1896 in DABiehl1896 
 (reprinted in DATheiler's DATheiler translation)
 
-Later, the DA (DA) was edited by DABiehl1896 in DABiehl1896 (reprinted in DATheiler's DATheiler translation)
+Later, the DA was edited by DABiehl1896 in DABiehl1896 (reprinted in DATheiler's DATheiler translation)
 
 You can set link-fields to false to avoid undesired linking when citing specific fields.
+
+
+Markdown Source
+Output
+`AristOp`
+AristOp
+`AristOp`
+AristOp
+`AristOp`
+AristOp
+`DA`
+DA
+`DABiehl1896 `
+DABiehl1896 
+`DABiehl1896`
+DABiehl1896
+`DATheiler`
+DATheiler
+`DATheiler`
+DATheiler
+
+: Simple example of how we are using styles to create the correct markup {#tbl-cite-field-example}
 
 4. Added the prefix []{#scriv\&lt;$linkID&gt;} to some Section Layouts. 
 

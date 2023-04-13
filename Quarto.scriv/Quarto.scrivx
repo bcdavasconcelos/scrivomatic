@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="B2CC997B-84FB-419C-B634-9E0BCAE9FD5F" Version="2.0" Creator="SCRMAC-3.3.1-15588" Device="iMac-de-Bernardo-2" Author="" Modified="2023-04-13 00:24:36 -0300" ModID="F82ED642-9BAB-4434-A602-71C2A65D9266">
+<ScrivenerProject Identifier="B2CC997B-84FB-419C-B634-9E0BCAE9FD5F" Version="2.0" Creator="SCRMAC-3.3.1-15588" Device="iMac-de-Bernardo-2" Author="" Modified="2023-04-13 14:23:13 -0300" ModID="B97E90A4-5BEF-41B0-8888-5E6CBB9935E5">
     <Binder>
         <BinderItem UUID="AD107F76-1964-416F-8DD0-01B59C5A3060" Type="Text" Created="2022-08-30 19:26:32 -0300" Modified="2022-09-21 09:03:14 -0300">
             <Title>About this Template</Title>
@@ -230,24 +230,24 @@
                                         <IconFileName>Figures and Graphs</IconFileName>
                                         <CustomMetaData>
                                             <MetaDataItem>
-                                                <FieldID>attributes</FieldID>
-                                                <Value>fig-align="right"</Value>
+                                                <FieldID>height</FieldID>
+                                                <Value>2cm</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
                                                 <FieldID>id</FieldID>
                                                 <Value>#fig-withattributes</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
+                                                <FieldID>class</FieldID>
+                                                <Value>.myclass</Value>
+                                            </MetaDataItem>
+                                            <MetaDataItem>
                                                 <FieldID>width</FieldID>
                                                 <Value>3cm</Value>
                                             </MetaDataItem>
                                             <MetaDataItem>
-                                                <FieldID>height</FieldID>
-                                                <Value>2cm</Value>
-                                            </MetaDataItem>
-                                            <MetaDataItem>
-                                                <FieldID>class</FieldID>
-                                                <Value>.myclass</Value>
+                                                <FieldID>attributes</FieldID>
+                                                <Value>fig-align="right"</Value>
                                             </MetaDataItem>
                                         </CustomMetaData>
                                     </MetaData>
@@ -448,11 +448,8 @@
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
-                    <CorkboardAndOutliner>
-                        <SelectedSubdocumentUUIDs>227A2302-23B9-4451-9FB9-D6A0C049719D</SelectedSubdocumentUUIDs>
-                    </CorkboardAndOutliner>
                     <Children>
-                        <BinderItem UUID="F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8" Type="Text" Created="2023-04-12 15:33:08 -0300" Modified="2023-04-13 00:15:55 -0300">
+                        <BinderItem UUID="F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8" Type="Text" Created="2023-04-12 15:33:08 -0300" Modified="2023-04-13 01:29:35 -0300">
                             <Title>List of Changes</Title>
                             <MetaData>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -500,7 +497,7 @@
                 <TextSelection>0,0</TextSelection>
             </TextSettings>
             <Children>
-                <BinderItem UUID="2622D537-0133-40C8-BA94-E3929202E577" Type="Text" Created="2022-08-30 19:26:32 -0300" Modified="2023-04-12 18:46:40 -0300">
+                <BinderItem UUID="2622D537-0133-40C8-BA94-E3929202E577" Type="Text" Created="2022-08-30 19:26:32 -0300" Modified="2023-04-13 01:40:55 -0300">
                     <Title>Primary Sources</Title>
                     <MetaData>
                         <SectionType>B62361CC-9C02-4D11-9ED7-E1F3203B68A4</SectionType>
@@ -520,7 +517,7 @@
                         <Bookmark Destination="https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/primary.json">Link</Bookmark>
                     </Bookmarks>
                 </BinderItem>
-                <BinderItem UUID="B6DF8B74-2795-4E2E-9BC3-A1FC4605BDEE" Type="Text" Created="2023-02-25 17:15:54 -0300" Modified="2023-04-12 18:47:08 -0300">
+                <BinderItem UUID="B6DF8B74-2795-4E2E-9BC3-A1FC4605BDEE" Type="Text" Created="2023-02-25 17:15:54 -0300" Modified="2023-04-13 01:15:54 -0300">
                     <Title>Secondary Sources</Title>
                     <MetaData>
                         <SectionType>B62361CC-9C02-4D11-9ED7-E1F3203B68A4</SectionType>
@@ -1146,11 +1143,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-08-30 08:51:22 -0300" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2023-04-14 00:00:00 -0300" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="-1" Characters="-7" Date="2023-04-13 00:05:07 -0300"/>
+        <PreviousSession Words="-4" Characters="-20" Date="2023-04-13 14:23:03 -0300"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2023-04-13 00:00:00 -0300">
-        <DraftWordCount>-1</DraftWordCount>
-        <DraftCharCount>-7</DraftCharCount>
+        <DraftWordCount>-4</DraftWordCount>
+        <DraftCharCount>-20</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>

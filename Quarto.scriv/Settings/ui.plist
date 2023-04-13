@@ -10,8 +10,8 @@
 	<false/>
 	<key>binderSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {175, 1354}}</string>
-		<string>{{176, 0}, {2384, 1354}}</string>
+		<string>{{0, 0}, {267, 1023}}</string>
+		<string>{{268, 0}, {785, 1023}}</string>
 	</array>
 	<key>binderWidth</key>
 	<real>208</real>
@@ -400,7 +400,7 @@
 	</dict>
 	<key>editorSplitFrames</key>
 	<array>
-		<string>{{378, 0}, {377, 617}}</string>
+		<string>{{730, 0}, {730, 993}}</string>
 	</array>
 	<key>fullScreenTextEditorSettings</key>
 	<dict>
@@ -409,11 +409,11 @@
 	</dict>
 	<key>inspectorSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {1839.5, 1324}}</string>
-		<string>{{1840.5, 0}, {543.5, 1324}}</string>
+		<string>{{0, 0}, {321, 993}}</string>
+		<string>{{322, 0}, {463, 993}}</string>
 	</array>
 	<key>inspectorWidth</key>
-	<real>263</real>
+	<real>524.5</real>
 	<key>lastDocumentSplitType</key>
 	<integer>1</integer>
 	<key>mainDocumentEditor.dockedQRTextSettings</key>
@@ -423,37 +423,29 @@
 	</dict>
 	<key>mainDocumentEditor.outlinerColumnsWidths</key>
 	<dict>
-		<key>characters</key>
-		<real>79</real>
-		<key>label</key>
-		<real>85</real>
+		<key>path</key>
+		<real>669.5</real>
 		<key>sectionType</key>
-		<real>197</real>
-		<key>status</key>
-		<real>85</real>
+		<real>98.5</real>
 		<key>title</key>
-		<real>253</real>
-		<key>totalWords</key>
-		<real>84</real>
-		<key>words</key>
-		<real>55</real>
+		<real>231</real>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 405.99999999999994}, {720, 724.57142857142844}}</string>
+	<string>{{0, 0}, {606, 294}}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>
-		<real>1.75</real>
+		<real>1.5</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>0 33 2560 1382 0 0 2560 1415 </string>
+	<string>0 28 1053 1051 0 0 1728 1079 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>1</real>
 	</dict>
 	<key>supportingDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {606, 294}}</string>
+	<string>{{0, 0}, {306, 937}}</string>
 	<key>supportingDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>

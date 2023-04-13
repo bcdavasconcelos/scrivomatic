@@ -36,7 +36,7 @@ author:
 keywords: [pandoc, quarto, scrivener]
 subject: workflow
 lang: en
-date: 2023-04-12      # Scrivener placeholder
+date: 2023-04-13      # Scrivener placeholder
 verbose: false                 # pandoc verbosity
 toc: true                     # table of contents
 number-sections: true         # numbered headings
@@ -569,7 +569,7 @@ No meæ menandri mediøcritatem [@siegel2015; @barrett2015; @crivellato2007], me
 
 []{#scriv27}
 
-By Bernardo Vasconcelos (see this)
+By [Bernardo Vasconcelos](https://github.com/bcdavasconcelos) (see this)
 
 This is a short summary of changes to Ian's excellect [Quarto template for Scrivener](http://forum.literatureandlatte.com/t/scrivener-quarto-a-technical-academic-publishing-workflow/129769?u=bernardo_vasconcelos) to integrate the [Cite Tools](http://bcdavasconcelos.github.io/citetools/) Quarto Extension. The extension introduces bibliography features that previously had been confined to `BibTeX` to Pandoc's Citeproc environment, keeping the output consistent across most formats (`LaTeX`, `DOCX`, `HTML`, and so on).
 
@@ -590,17 +590,17 @@ Choose the `Multibib` section type, fill the `Path` custom meta-data field and y
 
 
 :::{.callout-important}
-You can point Quarto and Pandoc to the bibliography file in several ways:
+You can point Quarto and Pandoc to the bibliography file using relative paths, full paths and URLs.
 
-- Relative path: my_file.bib
-- Full path: /Users/username/Dropbox/Bibliography/my_file.bib
-- URL: <https://raw.githubusercontent.com/bcdavasconcelos/ABNT-Phi/main/corpus-aristotelicum.bib>
+- `my_file.bib`
+- `/Users/username/bibliography/my_file.bib`
+- `https://raw.githubusercontent.com/.../arist.bib`
 :::
 
 
 See the backmatter for examples.
 
-[2. New]{.smallcaps} **Section Type** & **Custom Metadata Field** can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (`Depth`) with no space at the end, as in `###`*,* and then selecting the  `Depth .. Header & Text` section type.
+[2. New]{.smallcaps} **Section Type** & **Custom Metadata Field** can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (`Depth`) with no space at the end, as in `###`*,* and then selecting the  `Depth + Header` section type.
 
 [3. New]{.smallcaps} **Styles** provide support for the [cite field](https://github.com/bcdavasconcelos/citefield) Lua Filter, which can be used to cite arbitrary fields of the references.
 
@@ -617,7 +617,7 @@ Later, the [@DA]{.title} ([@DA]{.title-short}) was edited by
 (reprinted in [@DATheiler]{.translator}'s [@DATheiler]{.issued} translation)
 ~~~
 
-Later, the [@DA]{.title} ([@DA]{.title-short}) was edited by [@DABiehl1896]{.editor} in [@DABiehl1896]{.issued} (reprinted in [@DATheiler]{.translator}'s [@DATheiler]{.issued} translation)
+Later, the [@DA]{.title} was edited by [@DABiehl1896]{.editor} in [@DABiehl1896]{.issued} (reprinted in [@DATheiler]{.translator}'s [@DATheiler]{.issued} translation)
 
 :::{.callout-tip}
 You can set `link-fields` to `false` to avoid undesired linking when citing specific fields.
@@ -629,7 +629,6 @@ You can set `link-fields` to `false` to avoid undesired linking when citing spec
 | `[@AristOp]{.editor}` | [@AristOp]{.editor} |
 | `[@AristOp`]{.issued} | [@AristOp]{.issued} |
 | `[@DA]{.title}` | [@DA]{.title} |
-| `[@DA]{.title-short}` | [@DA]{.title-short} |
 | `[@DABiehl1896 ]{.editor}` | [@DABiehl1896 ]{.editor} |
 | `[@DABiehl1896]{.issued}` | [@DABiehl1896]{.issued} |
 | `[@DATheiler]{.translator}` | [@DATheiler]{.translator} |
@@ -641,21 +640,6 @@ You can set `link-fields` to `false` to avoid undesired linking when citing spec
 [4. Added]{.smallcaps} the prefix `[]{#scriv\<$linkID>}` to some **Section Layouts**. 
 
 This allows us to create links to [text sections that do not have a Header element](#scriv26).   
-
-## Example
-
-[]{#scriv29}
-
-```markdown
-The works of [@AristOp]{.author} were first edited by [@AristOp]{.editor} in [@AristOp]{.issued}.  
-
-Later, the [@DA]{.title} was edited by [@DABiehl1896]{.editor} in [@DABiehl1896]{.issued} [repr. in [@DATheiler]{.translator}'s [@DATheiler]{.issued} translation]; and by [@DAForster]{.editor} in [@DAForster]{.issued} [repr. in [@DACorcilius]{.translator}' [@DACorcilius]{.issued} translation]; and by [@DARoss]{.editor} in [@DARoss]{.issued}.
-```
-
-
-The works of [@AristOp]{.author} were first edited by [@AristOp]{.editor} in [@AristOp]{.issued}.  
-
-Later, the [@DA]{.title} was edited by [@DABiehl1896]{.editor} in [@DABiehl1896]{.issued} [repr. in [@DATheiler]{.translator}'s [@DATheiler]{.issued} translation]; and by [@DAForster]{.editor} in [@DAForster]{.issued} [repr. in [@DACorcilius]{.translator}' [@DACorcilius]{.issued} translation]; and by [@DARoss]{.editor} in [@DARoss]{.issued}.
 
 # Acknowledgments {.appendix .unnumbered}
 
@@ -669,42 +653,42 @@ The authors do **_love_** octopods, but this in no way biases their work.
 
 Bibliography
 
-[]{#scriv32}
+[]{#scriv31}
 
 
 # Primary Sources {.unnumbered}
 
+[]{#scriv32}
+
+---
+bibliography_multibib32: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/primary.json"
+---
+
+::: {#refs_multibib32}
+:::
+
+
+# Secondary Sources {.unnumbered}
+
 []{#scriv33}
 
 ---
-bibliography_multibib33: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/primary.json"
+bibliography_multibib33: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/secondary.json"
 ---
 
 ::: {#refs_multibib33}
 :::
 
 
-# Secondary Sources {.unnumbered}
+# Workflow {.unnumbered}
 
 []{#scriv34}
 
 ---
-bibliography_multibib34: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/secondary.json"
+bibliography_multibib34: "https://raw.githubusercontent.com/bcdavasconcelos/scrivomatic/master/refs/workflow.bib"
 ---
 
 ::: {#refs_multibib34}
-:::
-
-
-# Workflow {.unnumbered}
-
-[]{#scriv35}
-
----
-bibliography_multibib35: "https://raw.githubusercontent.com/bcdavasconcelos/scrivomatic/master/refs/workflow.bib"
----
-
-::: {#refs_multibib35}
 :::
 
 [Elephant1]: Elephant1.jpg {#fig-elephant .column-body}
