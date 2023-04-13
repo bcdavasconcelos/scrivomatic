@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SnapshotIndexes Version="1.0" BinderUUID="6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB">
+    <Snapshot Date="2023-02-25 18:49:19 -0300">
+        <Title>Untitled (Save)</Title>
+        <Text>The section type Attributes .. Header &amp; Text can be used to override the depth of the current binder item; that is to say, change the number of hashes before the title. Place the desired number of hashes in the Attributes metadata field with no space at the end.  
+
+The Section Layouts received a new prefix: []{#scriv&lt;$linkID&gt;}. This allows us to create links to text [sections without a Header element](&lt;$linkID&gt;).   
+
+There is a new Section Layout and a new Section Type to provide support for the Multibib lua filter. To use it, create a new section, choose the Multibib section type, then add the bibliography file path to the Path custom metadata field. In this way, we can create complex bibliographies with ease, spliting primary and secondary sources.  
+
+This is particularly with the citation-backlinks filter, that links back from the reference in the bibliography to each inline citation in the text. In practice, this means that now Citeproc can be used to create indexes!  
+
+Create a new file with the following content:  
+
+@book{Hom,
+author = {Homerus Epic.,},
+title = {0012},
+note = {8BC. \emph{Aliases}: Ὅμηρος Homerus Homero},
+annote = {Homero},
+url = {https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0012}
+}
+
+@book{Plat,
+author = {Plato Phil.,},
+title = {0059},
+note = {Atheniensis, 5-4BC. \emph{Aliases}: Πλάτων Plato Platão},
+annote = {Platão},
+url = {https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0059}
+}
+
+@book{Arist,
+author = {Aristotelis Phil.,},
+title = {0086},
+note = {Stagirites, 4BC. \emph{Aliases}: Ἀριστοτέλης Aristotelis Aristóteles},
+annote = {Aristóteles},
+url = {https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086}
+}
+```
+
+
+And another file, with the following:
+
+```latex
+@book{σῶς,
+author = {σῶς},
+title = {{sōs}},
+note = {□ \emph{la.} incolumis},
+annote = {σῶς}
+}
+
+@book{σωφροσύνη,
+author = {σωφροσύνη},
+title = {{sōphrosynē}},
+note = {□ \emph{syn.} temperantia □ \emph{en.} temperance, self-restraint, self-control  □ \emph{de.} Besonnenheit, Beherrschtheit},
+annote = {σωφροσύνη}
+}
+```
+
+Now add the path to each file to the appropriate text section below and compile to see the result.
+</Text>
+    </Snapshot>
+    <Snapshot Date="2023-02-25 21:10:43 -0300">
+        <Title>Untitled (Save)</Title>
+        <Text>The section type Attributes .. Header &amp; Text can be used to override the depth of the current binder item; that is to say, change the number of hashes before the title. Place the desired number of hashes in the Attributes metadata field with no space at the end (e.g. ###).  
+
+All of the Section Layouts received a new prefix: []{#scriv\&lt;$linkID&gt;}. This allows us to create links to text [sections that do not have a Header element](#scriv&lt;$linkID&gt;).   
+
+There is a new Section Layout and a new Section Type to provide support for the Multibib/Multiple-bibliographies lua filter. In this way, we can create complex bibliographies with ease, spliting primary and secondary sources. Each bibliography section will be named after the binder item whence it originated, as it happens with any chapter of the text which makes it very easy to managem them.
+
+Only the multiple-bibliographies filter is compatible with the template. The Multibib filter uses a single variable to store all of the file paths, so this creates problems for the template.
+
+Choose the Multibib section type, fill the Path custom meta-data field with the path to the bib file, and you're set.
+
+This can be extended in interesting ways, using the citation-backlinks filter that links back from the ref-entry in the bibliography to each inline citation in the text. This means that we get to make indexes using Citeproc that work both for LaTeX and HTML..
+
+To improve the precision of the back-reference, we could edit the original Lua filter to change the command \label to \pagelabel and define it thus in the header-includes meta-data field: \newcommand\pagelabel{\phantomsection\label} 
+
+This comes with disavantages as @refs will not be allowed in captions.
+
+Here is a short experiment. Export the two bibliography files in the Research folder. Now copy the path of each file to the Path custom meta-data field and compile. The result should be something like this.
+</Text>
+    </Snapshot>
+    <Snapshot Date="2023-04-12 12:05:34 -0300">
+        <Title>Untitled (Save)</Title>
+        <Text>By Bernardo Vasconcelos (see this)
+
+All changes aim to integrate the Cite Tools Quarto Extension to Ian's excellect Quarto template for Scrivener. The extension introduces new bibliography features (that previously had been confined to BibTeX) to Pandoc's Citeproc environment keeping the output consistent across most formats (LaTeX, DOCX, HTML, and so on).
+
+Install the extension to your Quarto project or to the  export-mmd folder you are using.
+
+quarto install extension bcdavasconcelos/citetools
+
+List of Changes
+
+New Section Layout &amp; Section Type provide support for the multiple bibliographies Lua Filter. 
+
+Choose the Multibib section type, fill the Path custom meta-data field and you're set! Bibliography sections will be named after the last heading element, that is, the binder item whence it originated, as it happens with all other chapters of the text.
+
+You can point Quarto and Pandoc to the bibliography file in several ways:
+- Relative path: my_file.bib
+- Full path: /Users/username/Dropbox/Bibliography/my_file.bib
+- URL: https://raw.githubusercontent.com/bcdavasconcelos/ABNT-Phi/main/corpus-aristotelicum.bib
+
+New Section Type &amp; Custom Metadata Field can be used to override the depth of the current binder item (by placing the desired number of hashes in the Attributes metadata field with no space at the end, as in ###, and then selecting the  Attributes .. Header &amp; Text section type).
+
+New Styles provide support for the citefield Lua Filter, which can be used to cite arbitrary fields of the references.
+
+Changed Section Layouts that now all receive a new prefix: []{#scriv&lt;$linkID&gt;}. This allows us to create links to text [sections that do not have a Header element](#scriv&lt;$linkID&gt;).   
+
+
+
+
+</Text>
+    </Snapshot>
+    <Snapshot Date="2023-04-12 14:18:51 -0300">
+        <Title>Untitled (Save)</Title>
+        <Text>By Bernardo Vasconcelos (see this)
+
+All changes aim to integrate the Cite Tools Quarto Extension to Ian's excellect Quarto template for Scrivener. The extension introduces new bibliography features (that previously had been confined to BibTeX) to Pandoc's Citeproc environment keeping the output consistent across most formats (LaTeX, DOCX, HTML, and so on).
+
+Install the extension to your Quarto project or to the  export-mmd folder you are using.
+
+quarto install extension bcdavasconcelos/citetools
+
+List of Changes
+
+New Section Layout &amp; Section Type provide support for the multiple bibliographies Lua Filter. 
+
+Choose the Multibib section type, fill the Path custom meta-data field and you're set! Bibliography sections will be named after the last heading element, that is, the binder item whence it originated, as it happens with all other chapters of the text. 
+
+You can point Quarto and Pandoc to the bibliography file in several ways:
+- Relative path: my_file.bib
+- Full path: /Users/username/Dropbox/Bibliography/my_file.bib
+- URL: https://raw.githubusercontent.com/bcdavasconcelos/ABNT-Phi/main/corpus-aristotelicum.bib
+
+See the backmatter for examples.
+
+New Section Type &amp; Custom Metadata Field can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (Depth) with no space at the end, as in ###, and then selecting the  Depth .. Header &amp; Text section type).
+
+New Styles provide support for the cite field Lua Filter, which can be used to cite arbitrary fields of the references.
+
+Changed Section Layouts that now all receive a new prefix: []{#scriv&lt;$linkID&gt;}. This allows us to create links to text [sections that do not have a Header element](#scriv&lt;$linkID&gt;).   
+</Text>
+    </Snapshot>
+</SnapshotIndexes>

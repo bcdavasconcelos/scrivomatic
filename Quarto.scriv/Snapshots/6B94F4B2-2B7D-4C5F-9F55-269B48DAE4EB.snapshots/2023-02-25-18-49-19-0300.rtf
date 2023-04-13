@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AvenirNext-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 AvenirNext-Bold;\f4\fnil\fcharset0 AvenirNext-Italic;}
+{\colortbl;\red255\green255\blue255;\red192\green239\blue251;}
+{\*\expandedcolortbl;;\cssrgb\c79200\c94900\c98800;}
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f0\fs24 \cf0 The section type 
+\f1 <$Scr_Cs::1>
+\f2\fs22 Attributes .. Header & Text
+\f1\fs24 <!$Scr_Cs::1>
+\f0  can be used to override the depth of the current binder item; that is to say, change the number of hashes before the title. Place the desired number of hashes in the 
+\f1 <$Scr_Cs::1>
+\f2\fs22 Attributes
+\f1\fs24 <!$Scr_Cs::1>
+\f0  metadata field with no space at the end.  \
+\
+The 
+\f3\b Section Layouts
+\f0\b0  received a new prefix: 
+\f1 <$Scr_Cs::1>
+\f2\fs22 []\{#scriv<$linkID>\}
+\f1\fs24 <!$Scr_Cs::1>
+\f0 . This allows us to create links to text {\field{\*\fldinst{HYPERLINK "scrivlnk://0CD37C9C-B62F-44D6-9290-BE255E64CBCC"}}{\fldrslt [sections without a Header}}{\field{\*\fldinst{HYPERLINK "scrivlnk://F1AA3BE0-F47B-44A4-9681-B165BEDB56C7"}}{\fldrslt  element](<$linkID>)}}.   \
+\
+There is a new 
+\f3\b Section Layout
+\f0\b0  and a new 
+\f3\b Section Type
+\f0\b0  to provide support for the {\field{\*\fldinst{HYPERLINK "https://github.com/pandoc-ext/multibib"}}{\fldrslt Multibib}} lua filter. To use it, create a new section, choose the 
+\f4\i Multibib
+\f0\i0  section type, then add the bibliography file path to the 
+\f3\b Path
+\f0\b0  custom metadata field. In this way, we can create complex bibliographies with ease, spliting primary and secondary sources.  \
+\
+This is particularly with the {\field{\*\fldinst{HYPERLINK "https://github.com/tarleb/citation-backlinks"}}{\fldrslt citation-backlinks}} filter, that links back from the reference in the bibliography to each inline citation in the text. In practice, this means that now Citeproc can be used to create indexes!  \
+\
+Create a new file with the following content:  \
+\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 \cb2 <$Scr_Ps::0>
+\f2 @book\{Hom,\
+author = \{Homerus Epic.,\},\
+title = \{0012\},\
+note = \{8BC. \\emph\{Aliases\}: \uc0\u8013 \u956 \u951 \u961 \u959 \u962  Homerus Homero\},\
+annote = \{Homero\},\
+url = \{https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0012\}\
+\}\
+\
+@book\{Plat,\
+author = \{Plato Phil.,\},\
+title = \{0059\},\
+note = \{Atheniensis, 5-4BC. \\emph\{Aliases\}: \uc0\u928 \u955 \u940 \u964 \u969 \u957  Plato Plat\'e3o\},\
+annote = \{Plat\'e3o\},\
+url = \{https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0059\}\
+\}\
+\
+@book\{Arist,\
+author = \{Aristotelis Phil.,\},\
+title = \{0086\},\
+note = \{Stagirites, 4BC. \\emph\{Aliases\}: \uc0\u7944 \u961 \u953 \u963 \u964 \u959 \u964 \u941 \u955 \u951 \u962  Aristotelis Arist\'f3teles\},\
+annote = \{Arist\'f3teles\},\
+url = \{https://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0086\}\
+\}\
+```\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 \cb1 <!$Scr_Ps::0>
+\f0 \
+\
+And another file, with the following:\
+\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 \cb2 <$Scr_Ps::0>
+\f2 ```latex\
+@book\{\uc0\u963 \u8182 \u962 ,\
+author = \{\uc0\u963 \u8182 \u962 \},\
+title = \{\{s\uc0\u333 s\}\},\
+note = \{\uc0\u9633  \\emph\{la.\} incolumis\},\
+annote = \{\uc0\u963 \u8182 \u962 \}\
+\}\
+\
+@book\{\uc0\u963 \u969 \u966 \u961 \u959 \u963 \u973 \u957 \u951 ,\
+author = \{\uc0\u963 \u969 \u966 \u961 \u959 \u963 \u973 \u957 \u951 \},\
+title = \{\{s\uc0\u333 phrosyn\u275 \}\},\
+note = \{\uc0\u9633  \\emph\{syn.\} temperantia \u9633  \\emph\{en.\} temperance, self-restraint, self-control  \u9633  \\emph\{de.\} Besonnenheit, Beherrschtheit\},\
+annote = \{\uc0\u963 \u969 \u966 \u961 \u959 \u963 \u973 \u957 \u951 \}\
+\}\
+```\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 \cb1 <!$Scr_Ps::0>
+\f0 \
+Now add the path to each file to the appropriate text section below and compile to see the result.\
+}

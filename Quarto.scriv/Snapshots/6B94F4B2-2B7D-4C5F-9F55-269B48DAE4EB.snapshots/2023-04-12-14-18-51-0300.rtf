@@ -1,0 +1,163 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AvenirNext-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fmodern\fcharset0 Courier;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fnil\fcharset0 AvenirNext-Bold;}
+{\colortbl;\red255\green255\blue255;\red192\green239\blue251;\red4\green45\blue62;}
+{\*\expandedcolortbl;;\cssrgb\c79200\c94900\c98800;\cssrgb\c0\c23137\c30980;}
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f0\fs24 \cf0 By Bernardo Vasconcelos (see this)\
+\
+All changes aim to integrate the {\field{\*\fldinst{HYPERLINK "http://bcdavasconcelos.github.io/citetools/"}}{\fldrslt Cite Tools}} Quarto Extension to Ian's excellect {\field{\*\fldinst{HYPERLINK "http://forum.literatureandlatte.com/t/scrivener-quarto-a-technical-academic-publishing-workflow/129769?u=bernardo_vasconcelos"}}{\fldrslt Quarto template for Scrivener}}. The extension introduces new bibliography features (that previously had been confined to 
+\f1 <$Scr_Cs::2>
+\f2\fs22 BibTeX
+\f1\fs24 <!$Scr_Cs::2>
+\f0 ) to Pandoc's Citeproc environment keeping the output consistent across most formats (
+\f1 <$Scr_Cs::2>
+\f2\fs22 LaTeX
+\f1\fs24 <!$Scr_Cs::2>
+\f0 , 
+\f1 <$Scr_Cs::2>
+\f2\fs22 DOCX
+\f1\fs24 <!$Scr_Cs::2>
+\f0 , 
+\f1 <$Scr_Cs::2>
+\f2\fs22 HTML
+\f1\fs24 <!$Scr_Cs::2>
+\f0 , and so on).\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 <$Scr_Cs::3>
+\f0\fs28 \AppleTypeServices\AppleTypeServicesF2424833 \
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1\fs24 \AppleTypeServices \cf0 <!$Scr_Cs::3>
+\f0 Install the extension to your Quarto project or to the  
+\f1 <$Scr_Cs::2>
+\f2\fs22 export-mmd
+\f1\fs24 <!$Scr_Cs::2>
+\f0  folder you are using.\
+\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 \cb2 <$Scr_Ps::0>
+\f3 quarto install extension bcdavasconcelos/citetools\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 \cb1 <$Scr_Cs::3><!$Scr_Ps::0>
+\f0\fs28 \AppleTypeServices\AppleTypeServicesF2424833 \
+List of Changes\
+\
+New
+\f1\fs24 \AppleTypeServices <!$Scr_Cs::3>
+\f0  
+\f1 <$Scr_Cs::4>
+\f4\b Section Layout
+\f1\b0 <!$Scr_Cs::4>
+\f0  & 
+\f1 <$Scr_Cs::4>
+\f4\b Section Type
+\f1\b0 <!$Scr_Cs::4>
+\f0  provide support for the {\field{\*\fldinst{HYPERLINK "https://github.com/pandoc/lua-filters/tree/master/multiple-bibliographies"}}{\fldrslt multiple bibliographies}} Lua Filter. \
+
+\f1 <$Scr_Cs::3>
+\f0\fs28 \AppleTypeServices\AppleTypeServicesF2424833 \
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1\fs24 \AppleTypeServices \cf0 <!$Scr_Cs::3>
+\f0 Choose the 
+\f1 <$Scr_Cs::2>
+\f2\fs22 Multibib 
+\f1\fs24 <!$Scr_Cs::2>
+\f0 section type, fill the 
+\f1 <$Scr_Cs::2>
+\f2\fs22 Path
+\f1\fs24 <!$Scr_Cs::2>
+\f0  custom meta-data field and you're set! Bibliography sections will be named after the last heading element, that is, the binder item whence it originated, as it happens with all other chapters of the text. \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf3 \expnd0\expndtw0\kerning0
+<$Scr_Ps::1>
+\f3 You can point Quarto and Pandoc to the bibliography file in several ways:\
+- Relative path: 
+\f1 \cf0 \kerning1\expnd0\expndtw0 <$Scr_Cs::2>
+\f2\fs22 my_file.bib
+\f1\fs24 <!$Scr_Cs::2>
+\f0 \
+
+\f3 \cf3 \expnd0\expndtw0\kerning0
+- Full path:
+\f0 \cf0 \kerning1\expnd0\expndtw0  
+\f1 <$Scr_Cs::2>
+\f2\fs22 /Users/username/Dropbox/Bibliography/my_file.bib
+\f1\fs24 <!$Scr_Cs::2>
+\f0 \
+
+\f3 \cf3 \expnd0\expndtw0\kerning0
+- URL: {\field{\*\fldinst{HYPERLINK "https://raw.githubusercontent.com/bcdavasconcelos/ABNT-Phi/main/corpus-aristotelicum.bib"}}{\fldrslt \cf3 https://raw.githubusercontent.com/bcdavasconcelos/ABNT-Phi/main/corpus-aristotelicum.bib}}\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 <$Scr_Cs::3><!$Scr_Ps::1>
+\f0\fs28 \AppleTypeServices\AppleTypeServicesF2424833 \
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1\fs24 \AppleTypeServices \cf0 <!$Scr_Cs::3>
+\f0 See the {\field{\*\fldinst{HYPERLINK "scrivlnk://6615E004-42AA-41A9-9092-B85A7C105334"}}{\fldrslt backmatter}} for examples.
+\f1 <$Scr_Cs::3>
+\f0\fs28 \AppleTypeServices\AppleTypeServicesF2424833 \
+\
+New
+\f1\fs24 \AppleTypeServices <!$Scr_Cs::3>
+\f0  
+\f1 <$Scr_Cs::4>
+\f4\b Section Type
+\f1\b0 <!$Scr_Cs::4>
+\f0  & 
+\f1 <$Scr_Cs::4>
+\f4\b Custom Metadata Field
+\f1\b0 <!$Scr_Cs::4>
+\f0  can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (
+\f1 <$Scr_Cs::2>
+\f2\fs22 Depth
+\f1\fs24 <!$Scr_Cs::2>
+\f0 ) with no space at the end, as in 
+\f1 <$Scr_Cs::2>
+\f2\fs22 ###
+\f1\fs24 <!$Scr_Cs::2><$Scr_Cs::5>
+\f0 ,
+\f1 <!$Scr_Cs::5>
+\f0  and then selecting the  
+\f1 <$Scr_Cs::2>
+\f2\fs22 Depth .. Header & Text
+\f1\fs24 <!$Scr_Cs::2>
+\f0  section type).
+\f1 <$Scr_Cs::4>
+\f4\b \
+
+\f1\b0 <!$Scr_Cs::4>
+\f0 \
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1 \cf0 <$Scr_Cs::3>
+\f0\fs28 \AppleTypeServices\AppleTypeServicesF2424833 New
+\f1\fs24 \AppleTypeServices <!$Scr_Cs::3>
+\f0  
+\f1 <$Scr_Cs::4>
+\f4\b Styles
+\f1\b0 <!$Scr_Cs::4>
+\f0  provide support for the {\field{\*\fldinst{HYPERLINK "https://github.com/bcdavasconcelos/citefield"}}{\fldrslt cite field}} Lua Filter, which can be used to cite arbitrary fields of the references.
+\f1 <$Scr_Cs::3>
+\f0\fs28 \AppleTypeServices\AppleTypeServicesF2424833 \
+\
+Changed
+\f1\fs24 \AppleTypeServices <!$Scr_Cs::3>
+\f0  
+\f1 <$Scr_Cs::4>
+\f4\b Section Layouts
+\f1\b0 <!$Scr_Cs::4>
+\f0  that now all receive a new prefix: 
+\f1 <$Scr_Cs::2>
+\f2\fs22 []\{#scriv<$linkID>\}
+\f1\fs24 <!$Scr_Cs::2>
+\f0 . This allows us to create links to text {\field{\*\fldinst{HYPERLINK "scrivlnk://0CD37C9C-B62F-44D6-9290-BE255E64CBCC"}}{\fldrslt [sections that do not have a Header}}{\field{\*\fldinst{HYPERLINK "scrivlnk://F1AA3BE0-F47B-44A4-9681-B165BEDB56C7"}}{\fldrslt  element](#scriv<$linkID>)}}.   \
+}

@@ -1,0 +1,84 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 AvenirNext-Regular;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 AvenirNext-Italic;\f4\fnil\fcharset0 AvenirNext-Bold;\f5\fswiss\fcharset0 Helvetica;
+\f6\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f0\b\fs24 \cf0 TEMPLATE VERSION: V1.0.1
+\f1\b0 \
+This project template shows how to combine Scrivener and the scientific and technical publishing system, {\field{\*\fldinst{HYPERLINK "https://quarto.org/"}}{\fldrslt Quarto}}. Quarto is basically an opinionated wrapper around {\field{\*\fldinst{HYPERLINK "https://pandoc.org/"}}{\fldrslt Pandoc}}, including templates for multiple outputs alongside numerous filters and extensions. \
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f2\fs30 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1\fs24 \cf0 As I already demonstrate how to use\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/iandol/scrivomatic"}}{\fldrslt Scrivener with pandoc}}, it was trivial to add a new workflow for supporting the use of Scrivener with the new technical and scientific publishing system,\'a0Quarto. Quarto bundles Pandoc along with a set of extensions and templates to provide an\'a0
+\f3\i all-in-one
+\f1\i0 \'a0experience, including Tufte-like output, extensive cross-referencing of equations tables figures & code, and running code (R, Python, Julia, Dot, Mermaid etc.) to generate figures and complex layouts.\
+\
+Because Scrivener supports Pandoc-flavoured markdown and automated post-processing, it also supports Quarto. However, for cross-referencing it places the labels at the end of the line, which conflicts with Scrivener\'92s block style injection of markup. A small mod of an existing\'a0
+\f3\i pandoc-crossref
+\f1\i0 \'a0post-processing script solved this problem. The script run from the post-processing pane of the Scrivener compiler runs quarto automatically after tweaking the path and fixing the cross-references.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs30 \cf0 \
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1\fs24 \cf0 Most features of Quarto can be enabled via three routes:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl312\slmult1\pardirnatural\qj\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Enabled using\'a0
+\f4\b Scrivener styles
+\f1\b0 \'a0\'97 example: Callouts, Live Code. The only caveat is Scrivener doesn\'92t allow paragraph [block] styles to be nested.\cb1 \
+\ls1\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Enabled using\'a0
+\f4\b Scrivener Section Layouts
+\f1\b0 \'a0\'97 example: Multipanel images / tables using cross-referencing attributes. This method enables nested blocks.\cb1 \
+\ls1\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+You can always write\'a0
+\f3\i plain markdown
+\f1\i0 \'a0in the editor if you prefer\'85\
+\pard\tx560\pardeftab720\partightenfactor0
+
+\f2\fs30 \cf0 \cb1 \
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1\fs24 \cf0 \cb2 Quarto\'92s\'a0{\field{\*\fldinst{HYPERLINK "https://quarto.org/docs/guide/"}}{\fldrslt documentation is excellent}}. Some of the cool features that Quarto includes:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl312\slmult1\pardirnatural\qj\partightenfactor0
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Panels with sub-figures and sub-tables.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Based on Tufte, you can use margins for notes, figures, equations etc. Layout can be modified to\'a0{\field{\*\fldinst{HYPERLINK "https://quarto.org/docs/authoring/article-layout.html"}}{\fldrslt span the page in many ways}}.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Comprehensive cross-referencing, using Pandoc\'92s\'a0
+\f5 \cb1 \kerning1\expnd0\expndtw0 <$Scr_Cs::0>
+\f6\fs22 @citation
+\f5\fs24 \cb2 \expnd0\expndtw0\kerning0
+<!$Scr_Cs::0>
+\f1 \'a0markup (based on\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/lierdakil/pandoc-crossref"}}{\fldrslt pandoc-crossref}}). For sub-figures / tables, it will add labels, like Figure 3(c) and these can be customised in th metadata.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+Academic author + affiliation metadata \'absimilar to\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/iandol/scrivomatic"}}{\fldrslt scrivomatic}}\'a0and\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/pandoc-scholar/pandoc-scholar"}}{\fldrslt pandoc scholar}}\'bb.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	5	}\expnd0\expndtw0\kerning0
+Run Python, R, Julia code \'93live\'94 to plot figures on each compile.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	6	}\expnd0\expndtw0\kerning0
+Use graphing engines like\'a0{\field{\*\fldinst{HYPERLINK "https://mermaid-js.github.io/"}}{\fldrslt Mermaid}}\'a0and\'a0{\field{\*\fldinst{HYPERLINK "https://graphviz.org/"}}{\fldrslt Graphviz}}.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	7	}\expnd0\expndtw0\kerning0
+HTML output has lots of cool tweaks, see\'a0{\field{\*\fldinst{HYPERLINK "https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html"}}{\fldrslt https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html}}\'a0for example.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	8	}\expnd0\expndtw0\kerning0
+Quarto allows\'a0{\field{\*\fldinst{HYPERLINK "https://quarto.org/docs/extensions/"}}{\fldrslt installable extensions}}, so you can plug in new layout templates and code to extend its powers!\
+\pard\tx560\pardeftab720\partightenfactor0
+
+\f2\fs30 \cf0 \cb1 \
+\
+\pard\tx0\tx0\tx567\tx1134\tx1701\sl312\slmult1\pardirnatural\qj\partightenfactor0
+
+\f1\fs24 \cf0 \cb2 Quarto install almost everything required (you can use it to manage Pandoc, LaTeX, Graphviz, Mermaid and other tools all-in-one). For LaTeX it can install and update\'a0{\field{\*\fldinst{HYPERLINK "https://yihui.org/tinytex/"}}{\fldrslt TinyTeX}}, allowing a small install footprint and automated addition of packages from CTAN.\
+}

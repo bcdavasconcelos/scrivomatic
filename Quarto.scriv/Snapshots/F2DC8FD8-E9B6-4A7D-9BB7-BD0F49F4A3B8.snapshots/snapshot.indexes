@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SnapshotIndexes Version="1.0" BinderUUID="F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8">
+    <Snapshot Date="2023-04-12 22:33:30 -0300">
+        <Title>Untitled (Save)</Title>
+        <Text>1. New Section Layout &amp; Section Type provide support for the multiple bibliographies Lua Filter. 
+
+Choose the Multibib section type, fill the Path custom meta-data field and you're set! Bibliography sections will be named after the last heading element, that is, the binder item whence it originated, as it happens with all other chapters of the text. 
+
+You can point Quarto and Pandoc to the bibliography file in several ways:
+
+- Relative path: my_file.bib
+- Full path: /Users/username/Dropbox/Bibliography/my_file.bib
+- URL: https://raw.githubusercontent.com/bcdavasconcelos/ABNT-Phi/main/corpus-aristotelicum.bib
+
+See the backmatter for examples.
+
+2. New Section Type &amp; Custom Metadata Field can be used to override the depth of the current binder item placing the desired number of hashes in the corresponding metadata field (Depth) with no space at the end, as in ###, and then selecting the  Depth .. Header &amp; Text section type.
+
+3. New Styles provide support for the cite field Lua Filter, which can be used to cite arbitrary fields of the references.
+
+
+Markdown Source
+Output
+The works of AristOp were first edited 
+by AristOp in AristOp. 
+The works of AristOp were first edited by AristOp in AristOp.  
+Later, the DA (DA) was edited by 
+DABiehl1896 in DABiehl1896 
+(reprinted in DATheiler's DATheiler translation)
+Later, the DA (DA) was edited by DABiehl1896 in DABiehl1896 (reprinted in DATheiler's DATheiler translation).
+
+: Falsa aproximação entre as enumerações em @EN I 7 e @EN I 13 {#tbl-eni7eni13}
+
+
+The works of AristOp were first edited by AristOp in AristOp.  
+
+The works of AristOp were first edited 
+by AristOp in AristOp.  
+
+
+Later, the DA (DA) was edited by 
+DABiehl1896 in DABiehl1896 
+(reprinted in DATheiler's DATheiler translation)
+
+Later, the DA (DA) was edited by DABiehl1896 in DABiehl1896 (reprinted in DATheiler's DATheiler translation)
+
+You can set link-fields to false to avoid undesired linking when citing specific fields.
+
+4. Added the prefix []{#scriv\&lt;$linkID&gt;} to some Section Layouts. 
+
+This allows us to create links to [text sections that do not have a Header element](#scriv&lt;$linkID&gt;).   
+</Text>
+    </Snapshot>
+</SnapshotIndexes>
