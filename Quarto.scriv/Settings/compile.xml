@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CompileSettings>
     <ProjectSettings>
-        <Content Scope="All">
+        <Content Scope="Included">
             <Filter State="Off" Exclude="No" Type="Status">
                 <CollectionID>0676D34A-DC44-4DC2-95DC-808FDFA11695</CollectionID>
                 <Label>-1</Label>

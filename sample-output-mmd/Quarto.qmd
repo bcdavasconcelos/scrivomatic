@@ -36,7 +36,7 @@ author:
 keywords: [pandoc, quarto, scrivener]
 subject: workflow
 lang: en
-date: 2023-04-13      # Scrivener placeholder
+date: 2023-04-14      # Scrivener placeholder
 verbose: false                 # pandoc verbosity
 toc: true                     # table of contents
 number-sections: true         # numbered headings
@@ -653,44 +653,39 @@ I am grateful for the insightful comments offered by the anonymous peer reviewer
 The authors do **_love_** octopods, but this in no way biases their work.
 
 
-Bibliography
+# Primary Sources {.unnumbered}
 
 []{#scriv31}
 
+---
+bibliography_multibib31: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/primary.json"
+---
 
-# Primary Sources {.unnumbered}
+::: {#refs_multibib31}
+:::
+
+
+# Secondary Sources {.unnumbered}
 
 []{#scriv32}
 
 ---
-bibliography_multibib32: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/primary.json"
+bibliography_multibib32: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/secondary.json"
 ---
 
 ::: {#refs_multibib32}
 :::
 
 
-# Secondary Sources {.unnumbered}
+# Workflow {.unnumbered}
 
 []{#scriv33}
 
 ---
-bibliography_multibib33: "https://raw.githubusercontent.com/bcdavasconcelos/citetools/main/refs/secondary.json"
+bibliography_multibib33: "https://raw.githubusercontent.com/bcdavasconcelos/scrivomatic/master/refs/workflow.bib"
 ---
 
 ::: {#refs_multibib33}
-:::
-
-
-# Workflow {.unnumbered}
-
-[]{#scriv34}
-
----
-bibliography_multibib34: "https://raw.githubusercontent.com/bcdavasconcelos/scrivomatic/master/refs/workflow.bib"
----
-
-::: {#refs_multibib34}
 :::
 
 [Elephant1]: Elephant1.jpg {#fig-elephant .column-body}

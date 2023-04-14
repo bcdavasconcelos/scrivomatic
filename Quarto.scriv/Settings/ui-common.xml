@@ -12,7 +12,7 @@
             <ItemID>8B014782-1E52-4F6D-B15C-CA5FB440B23B</ItemID>
         </ExpandedItems>
         <Selection>
-            <ItemID>F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8</ItemID>
+            <ItemID>6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB</ItemID>
         </Selection>
         <SearchResultsSort Titles="Ascending" Dates="Ascending">None</SearchResultsSort>
     </Binder>
@@ -218,16 +218,17 @@
                 <ShowHeader>Yes</ShowHeader>
                 <ShowFooter>Yes</ShowFooter>
                 <GroupsViewMode>Scrivenings</GroupsViewMode>
-                <CurrentViewMode>Single</CurrentViewMode>
+                <CurrentViewMode>Scrivenings</CurrentViewMode>
                 <SelectionAffects>None</SelectionAffects>
                 <Content>
-                    <ItemID>F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8</ItemID>
+                    <ItemID>6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB</ItemID>
                 </Content>
-                <NavigationHistory CurrentIndex="3">
+                <NavigationHistory CurrentIndex="4">
                     <HistoryItem Type="BinderItems" ViewMode="Single">2622D537-0133-40C8-BA94-E3929202E577</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Scrivenings" ScriveningsSelection="0,0">9D32A05A-EAD8-47BC-B2CD-1E7C5DF4EFD5</HistoryItem>
-                    <HistoryItem Type="BinderItems" ViewMode="Scrivenings" ScriveningsSelection="1653,0">6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Scrivenings" ScriveningsSelection="0,0">6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">F2DC8FD8-E9B6-4A7D-9BB7-BD0F49F4A3B8</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Scrivenings">6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB</HistoryItem>
                 </NavigationHistory>
             </View>
             <Text>
@@ -235,7 +236,7 @@
                 <PageLayout Facing="No">No</PageLayout>
                 <TypewriterScrolling>No</TypewriterScrolling>
                 <LineNumbers Interval="1">No</LineNumbers>
-                <Selection>1033,0</Selection>
+                <Selection>212,0</Selection>
             </Text>
             <Outliner>
                 <Columns>

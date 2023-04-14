@@ -12,9 +12,6 @@
 </Text>
             <Notes>See https://quarto.org/docs/authoring/figures.html#multiformat-figures </Notes>
         </Document>
-        <Document ID="5085B908-3E92-4277-AD5E-98A2D3D932E0">
-            <Title>Bibliography</Title>
-        </Document>
         <Document ID="671E32DD-A9C3-4576-A65A-70B920FCDFD9">
             <Title>Text</Title>
             <Text>No meæ menandri mediøcritatem, meis tibique convenire vis id! Delicata intellegam mei ex. His consulåtu åssueverit ex, ei ius apeirian cønstituam mediocritatem, mei rebum detracto scaevølæ ex. Sed modo dico ullum at, sententiae definiebas ex eam! Nøstro eruditi eum ex.  
@@ -25,6 +22,9 @@ No meæ menandri mediøcritatem, meis tibique convenire vis id! Delicata intelle
 
 Sint meis quo et, vis ad fæcete dolorem! Ad quøt moderatius elaboraret eum, pro paulo ridens quaestio ut! Iudico nullam sit ad, ad has åperiam senserit conceptåm? Tritani posidonium suscipiantur ex duo, meæ essent mentitum ad. Nåm ex mucius mandamus, ut duo cåusae offendit laboramus. Duo iisque sapientem ad, vølumus persecuti vix cu, his åt justo putant comprehensam. See @fig-withattributes for details.  
 </Text>
+        </Document>
+        <Document ID="5085B908-3E92-4277-AD5E-98A2D3D932E0">
+            <Title>Bibliography</Title>
         </Document>
         <Document ID="D3758D51-73E1-41A3-9947-FF13D054291A">
             <Title>Placeholder</Title>
@@ -137,9 +137,8 @@ Item 12
 Main caption. This is a markdown multi-table panel with two sub-tables generated using a Section Type [Multiformat Table] Edit the Inspector’s Custom Metadata [ID, Class &amp; Attributes] which holds the cross-referencing label and the attributes for this multipart table, which will be added by the Section Layout by the compiler.
 </Text>
         </Document>
-        <Document ID="E6AB68C4-7984-42B9-B7B5-E97DFF5D254F">
-            <Title>Tip Callout</Title>
-            <Text>This is a tip callout.</Text>
+        <Document ID="C3B826DA-2B69-433E-AE8F-96FD8BC82EBB">
+            <Title>Elephant 2</Title>
         </Document>
         <Document ID="96690C34-1F3E-4364-9883-79E52C6E4086">
             <Title>Multipart Figure</Title>
@@ -195,8 +194,9 @@ Ad pro quod definitiønem, mel no laudem delectus, te mei prompta maiorum pønde
 </Text>
             <Comments>Another footnote. Although footnotes get converted just fine, one caveat is you cannot use Scrivener inline styles, so you **must** use Pandoc markup *directly*.</Comments>
         </Document>
-        <Document ID="C3B826DA-2B69-433E-AE8F-96FD8BC82EBB">
-            <Title>Elephant 2</Title>
+        <Document ID="E6AB68C4-7984-42B9-B7B5-E97DFF5D254F">
+            <Title>Tip Callout</Title>
+            <Text>This is a tip callout.</Text>
         </Document>
         <Document ID="1ACCA6A1-1239-443E-B1CC-D3CC9058013A">
             <Title>Note Callout</Title>
@@ -212,6 +212,8 @@ The script’s output is redirected &amp;&gt; to a Quarto.log file and this log 
         </Document>
         <Document ID="DAE0B6CC-07A9-46F2-ACED-44F8DD10D299">
             <Title>Bibliography</Title>
+            <Text>
+</Text>
         </Document>
         <Document ID="AD107F76-1964-416F-8DD0-01B59C5A3060">
             <Title>About this Template</Title>
@@ -272,6 +274,11 @@ digraph finite_state_machine {
 }
 </Text>
         </Document>
+        <Document ID="1AB3BC7E-221E-4E72-88CA-F8376C04E680">
+            <Title>Column Page←Left</Title>
+            <Text>This uses a Section Type [Layout Column Page←Left]. The contents will be assigned the .column-page-left class and stretched leftwards across the page, see https://quarto.org/docs/authoring/article-layout.html for details.  
+</Text>
+        </Document>
         <Document ID="1E8405F4-2C3C-4EEA-AE91-A30A669CBA56">
             <Title>Mermaid Graph</Title>
             <Text>%%|label: fig-label
@@ -282,11 +289,6 @@ digraph finite_state_machine {
 }}%%
 
 
-</Text>
-        </Document>
-        <Document ID="1AB3BC7E-221E-4E72-88CA-F8376C04E680">
-            <Title>Column Page←Left</Title>
-            <Text>This uses a Section Type [Layout Column Page←Left]. The contents will be assigned the .column-page-left class and stretched leftwards across the page, see https://quarto.org/docs/authoring/article-layout.html for details.  
 </Text>
         </Document>
         <Document ID="EA34AC25-416C-4018-8F59-1204A188736B">
@@ -356,7 +358,7 @@ No meæ menandri mediøcritatem [@siegel2015; @barrett2015; @crivellato2007], me
         </Document>
         <Document ID="6B94F4B2-2B7D-4C5F-9F55-269B48DAE4EB">
             <Title>CiteTools Integration</Title>
-            <Text>By Bernardo Vasconcelos (see this)
+            <Text>By Bernardo Vasconcelos (see this thread)
 
 This is a short summary of changes to Ian's excellect Quarto template for Scrivener to integrate the Cite Tools Quarto Extension. The extension introduces bibliography features that previously had been confined to BibTeX to Pandoc's Citeproc environment, keeping the output consistent across most formats (LaTeX, DOCX, HTML, and so on).
 
@@ -390,9 +392,6 @@ Lørem ipsum dolør sit amet, eu ipsum movet vix, veniam låoreet posidonium te 
 
 </Text>
         </Document>
-        <Document ID="D5A6A9DF-5BF9-4ECF-8A31-E27122CB8436">
-            <Title>Glossary</Title>
-        </Document>
         <Document ID="C7DE6C79-67F9-4873-BD08-376A867C1B6E">
             <Title>Methods</Title>
         </Document>
@@ -402,6 +401,9 @@ Lørem ipsum dolør sit amet, eu ipsum movet vix, veniam låoreet posidonium te 
         <Document ID="0928180C-5325-4A71-AE4E-3D928D8FC0C0">
             <Title>Warning Callout</Title>
             <Text>This is a warning callout.</Text>
+        </Document>
+        <Document ID="D5A6A9DF-5BF9-4ECF-8A31-E27122CB8436">
+            <Title>Glossary</Title>
         </Document>
         <Document ID="2A3CE4F8-B8AE-4E24-94A0-DA38CBE20492">
             <Title>Multipart Figure</Title>
@@ -435,10 +437,6 @@ kbl(dt) %&gt;%
 
 </Text>
         </Document>
-        <Document ID="0DC0919D-D8E9-4D8E-AF37-35D9F954B586">
-            <Title>Secondary Sources</Title>
-            <Synopsis>Don't forget to set the bibliography path!</Synopsis>
-        </Document>
         <Document ID="AB20E377-AA9F-46EB-9D42-CFDA75D5D58C">
             <Text>Eam in ubique høneståtis ullåmcorper, no eos vitae orætiø viderer. Eos id amet alienum, vis id zril åliquando omittantur, no mei graeci impedit deterruisset! We can reference sub-tables, for example see @tbl-second.
 
@@ -470,6 +468,10 @@ No meæ menandri mediøcritatem, meis tibique convenire vis id! Delicata intelle
         <Document ID="3CDA6495-B6EE-4128-9310-2608589863D8">
             <Title>Important Callout</Title>
             <Text>This is an important callout.</Text>
+        </Document>
+        <Document ID="0DC0919D-D8E9-4D8E-AF37-35D9F954B586">
+            <Title>Secondary Sources</Title>
+            <Synopsis>Don't forget to set the bibliography path!</Synopsis>
         </Document>
         <Document ID="0CD37C9C-B62F-44D6-9290-BE255E64CBCC">
             <Text>#
@@ -513,11 +515,11 @@ Sint meis quo et, vis ad fæcete dolorem! Ad quøt moderatius elaboraret eum, pr
 
 </Text>
         </Document>
-        <Document ID="BA898AEE-F0DF-4322-9314-FEDA26981C10">
-            <Title>Index of Ancient Authors</Title>
-        </Document>
         <Document ID="BE670D8F-8E60-4467-97D7-ACF7032D2BEF">
             <Title>Primary Sources</Title>
+        </Document>
+        <Document ID="BA898AEE-F0DF-4322-9314-FEDA26981C10">
+            <Title>Index of Ancient Authors</Title>
         </Document>
         <Document ID="11709F70-97CB-4CF6-B600-51EE0E1FCD5E">
             <Title>Mermaid Figure</Title>
